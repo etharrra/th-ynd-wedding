@@ -1,0 +1,46 @@
+# Node dependencies
+node_modules/
+.pnpm-store/
+
+# Vite / build outputs
+/dist/
+/.vite/
+.vite/**
+*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+*.log
+
+# Testing / coverage
+coverage/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Optional caches
+.eslintcache
+.stylelintcache
+.parcel-cache/
+.turbo/
+
+# Misc
+# lockfiles should be committed, so do not ignore them
+# *.lock
