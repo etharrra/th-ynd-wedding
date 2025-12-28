@@ -40,7 +40,7 @@ export function OurStory() {
           {/* Center - Large photo */}
           <div className="lg:col-span-4">
             <img
-              src="/src/assets/couple-1.png"
+              src="/images/couple-1.png"
               alt="Couple intimate moment"
               className="w-full h-auto"
             />
@@ -49,7 +49,7 @@ export function OurStory() {
           {/* Right side - Small photo */}
           <div className="lg:col-span-3">
             <img
-              src="/src/assets/couple-2.png"
+              src="/images/couple-2.png"
               alt="Wedding couple"
               className="w-full h-auto max-w-xs mx-auto"
             />

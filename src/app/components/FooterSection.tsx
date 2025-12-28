@@ -28,7 +28,7 @@ export function FooterSection() {
         <div className="w-full flex justify-center">
           <div className="bg-white/0" style={{ padding: 0 }}>
             <img
-              src="/src/assets/footer-img.jpg"
+              src="/images/footer-img.jpg"
               alt="Couple"
               className="object-cover"
               style={{ width: "640px", height: "360px", objectPosition: "center" }}
