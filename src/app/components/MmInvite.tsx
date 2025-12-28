@@ -9,7 +9,7 @@ export function MmInvite() {
         <h1
           className="mb-8"
           style={{
-            fontFamily: "Myanmar Text, Padauk, sans-serif",
+            fontFamily: "Canva Font,Myanmar Text, Padauk, sans-serif",
             fontSize: "2rem",
             lineHeight: "1.4",
           }}
@@ -21,7 +21,7 @@ export function MmInvite() {
         <div
           className="mb-6"
           style={{
-            fontFamily: "Myanmar Text, Padauk, sans-serif",
+            fontFamily: "Canva Font, Myanmar Text, Padauk, sans-serif",
             fontSize: "1rem",
             lineHeight: "1.8",
           }}
@@ -38,7 +38,7 @@ export function MmInvite() {
         <h2
           className="mb-2"
           style={{
-            fontFamily: "Myanmar Text, Padauk, sans-serif",
+            fontFamily: "Canva Font, Myanmar Text, Padauk, sans-serif",
             fontSize: "1.5rem",
             fontWeight: "bold",
           }}
@@ -50,7 +50,7 @@ export function MmInvite() {
         <p
           className="mb-10"
           style={{
-            fontFamily: "Marcellus, serif",
+            fontFamily: "Canva Font, Marcellus, serif",
             fontSize: "1rem",
           }}
         >
@@ -68,7 +68,7 @@ export function MmInvite() {
         <div
           className="mb-6"
           style={{
-            fontFamily: "Myanmar Text, Padauk, sans-serif",
+            fontFamily: "Canva Font, Myanmar Text, Padauk, sans-serif",
             fontSize: "1rem",
             lineHeight: "1.8",
           }}
@@ -86,7 +86,7 @@ export function MmInvite() {
         <h2
           className="mb-2"
           style={{
-            fontFamily: "Myanmar Text, Padauk, sans-serif",
+            fontFamily: "Canva Font, Myanmar Text, Padauk, sans-serif",
             fontSize: "1.5rem",
             fontWeight: "bold",
           }}
@@ -98,7 +98,7 @@ export function MmInvite() {
         <p
           className="mb-10"
           style={{
-            fontFamily: "Marcellus, serif",
+            fontFamily: "Canva Font, Marcellus, serif",
             fontSize: "1rem",
           }}
         >
@@ -115,7 +115,7 @@ export function MmInvite() {
         {/* Footer text */}
         <div
           style={{
-            fontFamily: "Myanmar Text, Padauk, sans-serif",
+            fontFamily: "Canva Font, Myanmar Text, Padauk, sans-serif",
             fontSize: "0.9rem",
             lineHeight: "1.6",
           }}

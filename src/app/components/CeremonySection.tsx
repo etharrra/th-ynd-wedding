@@ -6,7 +6,7 @@ export function CeremonySection() {
                 <h2
                     className="text-center mb-16 md:mb-20 tracking-wide"
                     style={{
-                        fontFamily: "Marcellus, serif",
+                        fontFamily: "RTL Ansam, Marcellus, serif",
                         fontSize: "3.25rem",
                         lineHeight: 1.1,
                         fontWeight: 400,

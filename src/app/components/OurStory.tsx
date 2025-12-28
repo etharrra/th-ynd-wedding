@@ -11,7 +11,7 @@ export function OurStory() {
             <h2
               className="mb-12"
               style={{
-                fontFamily: "'Great Vibes', cursive",
+                fontFamily: "Parfumerie Script, cursive",
                 fontSize: "4rem",
                 lineHeight: "1.2",
               }}

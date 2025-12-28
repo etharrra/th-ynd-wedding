@@ -5,7 +5,7 @@ export function FooterSection() {
         <h2
           className="text-center tracking-wide"
           style={{
-            fontFamily: "Marcellus, serif",
+            fontFamily: "New Icon Serif, Marcellus, serif",
             fontSize: "3rem",
             lineHeight: 1.1,
             letterSpacing: "0.04em",
@@ -17,8 +17,8 @@ export function FooterSection() {
         <p
           className="mt-2 mb-12 text-center italic"
           style={{
-            fontFamily: "'Great Vibes', cursive",
-            fontSize: "2rem",
+            fontFamily: "Custom Font,Marcellus, serif",
+            fontSize: "3rem",
             color: "#2F2A25",
           }}
         >

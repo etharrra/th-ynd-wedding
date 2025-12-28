@@ -1,3 +1,79 @@
-@import url('https://fonts.cdnfonts.com/css/optima');
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+/* Marcellus */
+@font-face {
+  font-family: 'Marcellus';
+  src: url('/fonts/Marcellus-Regular.9890941c22de842caf8195.71ed73c642836d36f22bac2bf65cab01.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Optima */
+@font-face {
+  font-family: 'Optima LT Pro';
+  src: url('/fonts/OptimaLTPro-Roman.bc9a67dccf6731ae2543c8.f42af10e08a2638d4ff0141b4a35fbbc.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Optima Bold';
+  src: url('/fonts/OptimaLTPro-Bold.f67411e6e83275682e31b84.486b9ce2e53eb07abade74c83d37a568.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* RTL Ansam */
+@font-face {
+  font-family: 'RTL Ansam';
+  src: url('/fonts/RTL-Ansam-Ansam.1f74aa4e5d38bf4c7d70aa57.0c9525d4fdca951045d5801288f43b84.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Canva Font */
+@font-face {
+  font-family: 'Canva Font';
+  src: url('/fonts/canva-font.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Parfumerie Script */
+@font-face {
+  font-family: 'Parfumerie Script';
+  src: url('/fonts/ParfumerieScript.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* New Icon Serif */
+@font-face {
+  font-family: 'New Icon Serif';
+  src: url('/fonts/NewIconSerif.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Custom Font */
+@font-face {
+  font-family: 'Custom Font';
+  src: url('/fonts/font-c9998f5e.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Optima LT Pro Roman v2 */
+@font-face {
+  font-family: 'Optima LT Pro';
+  src: url('/fonts/OptimaLTPro-Roman-v2.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
