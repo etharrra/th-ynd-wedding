@@ -3,7 +3,7 @@ export function HeroSection() {
         <section className="relative w-full h-screen overflow-hidden">
             {/* Background Image */}
             <img
-                src="/images/hero-img.png"
+                src="/images/hero-img.jpg"
                 alt="Wedding couple"
                 className="w-full h-full object-cover"
             />

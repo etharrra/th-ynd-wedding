@@ -45,7 +45,7 @@ export function OurStory() {
                     {/* Center - Large photo */}
                     <div className="lg:col-span-4">
                         <motion.img
-                            src="/images/couple-1.png"
+                            src="/images/couple-1.jpg"
                             alt="Couple intimate moment"
                             className="w-full h-auto"
                             {...riseUpAnimation}
@@ -55,7 +55,7 @@ export function OurStory() {
                     {/* Right side - Small photo */}
                     <div className="lg:col-span-3">
                         <motion.img
-                            src="/images/couple-2.png"
+                            src="/images/couple-2.jpg"
                             alt="Wedding couple"
                             className="w-full h-auto max-w-xs mx-auto"
                             {...riseUpAnimation}
