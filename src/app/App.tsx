@@ -4,6 +4,7 @@ import { TraditionalPhoto } from "./components/TraditionalPhoto";
 import { MmInvite } from "./components/MmInvite";
 import { OurStory } from "./components/OurStory";
 import { CeremonySection } from "./components/CeremonySection";
+import { PhotoSlider } from "./components/PhotoSlider";
 import { FooterSection } from "./components/FooterSection";
 
 export default function App() {
@@ -26,6 +27,9 @@ export default function App() {
 
             {/* Ceremony Section */}
             <CeremonySection />
+
+            {/* Photo Slider */}
+            <PhotoSlider />
 
             {/* Footer Section */}
             <FooterSection />

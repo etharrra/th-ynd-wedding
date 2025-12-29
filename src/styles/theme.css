@@ -124,8 +124,212 @@
         @apply border-border outline-ring/50;
     }
 
+    /* Embla thumbnails: container and slides */
+    .thumb-embla .embla__container {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .thumb-embla .embla__slide {
+        flex: 0 0 120px; /* match button width so slides have visible width */
+        padding: 2px; /* breathing room around each thumb */
+    }
+
+    .thumb-embla .thumb-btn {
+        cursor: pointer;
+        width: 120px; /* desktop */
+        height: 80px;
+        border-radius: 12px;
+        overflow: hidden;
+        background-color: #f0eee9; /* subtle placeholder */
+        display: grid; /* allow centering just in case */
+        place-items: center;
+        border: 1px solid var(--border);
+        box-shadow: inset 0 0 0 0 transparent;
+        box-sizing: border-box; /* make border even on all sides */
+        position: relative; /* for consistent outline rendering */
+        transition:
+            border-color 200ms ease,
+            box-shadow 200ms ease,
+            transform 150ms ease;
+    }
+
+    .thumb-embla .thumbnail-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center; /* ensure image is centered horizontally and vertically */
+        border-radius: inherit; /* match button radius */
+        opacity: 0.85;
+        transition:
+            opacity 200ms ease,
+            transform 200ms ease;
+        border: 0; /* remove inner border to avoid uneven double borders */
+        display: block;
+    }
+
+    .thumb-embla .thumb-btn:hover .thumbnail-img {
+        opacity: 0.95;
+    }
+    .thumb-embla .thumb-btn:focus-visible:not(.is-selected) {
+        outline: none;
+        box-shadow: 0 0 0 2px var(--foreground);
+    }
+    .thumb-embla .thumb-btn.is-selected {
+        border-color: var(--foreground);
+    }
+    /* Even outer ring using pseudo-element */
+    .thumb-embla .thumb-btn.is-selected::after {
+        content: "";
+        position: absolute;
+        inset: -2px; /* equal ring around */
+        border: 3px solid var(--foreground);
+        border-radius: inherit;
+        pointer-events: none;
+    }
+    .thumb-embla .thumb-btn.is-selected .thumbnail-img {
+        opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+        .thumb-embla .embla__slide {
+            flex-basis: 110px;
+        }
+        .thumb-embla .thumb-btn {
+            width: 110px;
+            height: 72px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .thumb-embla .embla__slide {
+            flex-basis: 100px;
+        }
+        .thumb-embla .thumb-btn {
+            width: 100px;
+            height: 64px;
+        }
+        .thumb-embla .thumbnail-img {
+            border-radius: 8px;
+        }
+    }
+
     body {
         @apply bg-background text-foreground;
+    }
+
+    /* Center images inside react-slick with class .main-slick */
+    .main-slick .slick-list {
+        height: 500px;
+        transform: translateZ(0); /* Hardware acceleration */
+        backface-visibility: hidden;
+        perspective: 1000px;
+    }
+
+    .main-slick .slick-track {
+        display: flex !important;
+        align-items: center !important;
+        transform: translateZ(0); /* Hardware acceleration */
+        backface-visibility: hidden;
+        perspective: 1000px;
+    }
+
+    .main-slick .slick-slide {
+        height: 100% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        float: none !important; /* slick sets float:left; this conflicts with flex centering */
+    }
+
+    .main-slick .slick-slide > div,
+    .main-slick .slick-slide > div > div {
+        width: 100% !important;
+        height: 100% !important;
+        display: grid !important;
+        place-items: center !important;
+    }
+
+    .main-slick img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: contain;
+        max-height: 500px;
+        max-width: 100%;
+    }
+
+    /* Thumbnail slider styling */
+    .thumb-slick .slick-track {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important; /* center the thumbnails as a group */
+        gap: 12px; /* visual spacing between thumbs */
+    }
+
+    .thumb-slick .slick-slide {
+        float: none !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .thumb-slick .slick-slide > div {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100%;
+    }
+
+    .thumb-slick .thumbnail-img {
+        width: 110px; /* fixed size regardless of image ratio */
+        height: 72px; /* maintain consistent grid alignment */
+        object-fit: cover; /* crop to fill box */
+        border-radius: 8px;
+        opacity: 0.6;
+        transition:
+            opacity 200ms ease,
+            transform 200ms ease,
+            box-shadow 200ms ease,
+            border-color 200ms ease;
+        border: 2px solid var(--border);
+        display: block;
+    }
+
+    .thumb-slick .thumbnail-img:hover {
+        opacity: 0.9;
+    }
+
+    /* Active/current thumbnail linked by slick */
+    .thumb-slick .slick-current .thumbnail-img,
+    .thumb-slick .slick-slide.slick-active .thumbnail-img:active {
+        opacity: 1;
+        border-color: var(--foreground);
+        box-shadow: 0 0 0 2px
+            color-mix(in oklch, var(--foreground) 20%, transparent);
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 768px) {
+        .thumb-slick .slick-track {
+            gap: 10px;
+        }
+        .thumb-slick .thumbnail-img {
+            width: 96px;
+            height: 60px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .thumb-slick .slick-track {
+            gap: 8px;
+        }
+        .thumb-slick .thumbnail-img {
+            width: 84px;
+            height: 52px;
+            border-radius: 6px;
+        }
     }
 
     /**
