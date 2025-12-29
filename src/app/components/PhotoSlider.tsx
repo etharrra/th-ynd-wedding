@@ -286,7 +286,7 @@ export function PhotoSlider() {
                                     <img
                                         src={photo.src}
                                         alt={photo.alt}
-                                        className="block mx-auto max-w-full object-contain p-2 rounded-4xl"
+                                        className="block mx-auto max-w-full object-contain p-1 rounded-4xl"
                                         loading={
                                             index === selectedIndex
                                                 ? "eager"
