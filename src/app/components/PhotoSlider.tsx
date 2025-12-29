@@ -282,11 +282,11 @@ export function PhotoSlider() {
                                 key={index}
                                 className="embla__slide flex-[0_0_100%] min-w-0"
                             >
-                                <div className="w-full h-[500px] grid place-items-center">
+                                <div className="w-full h-[400px] grid place-items-center">
                                     <img
                                         src={photo.src}
                                         alt={photo.alt}
-                                        className="block mx-auto max-w-full object-contain rounded-2xl"
+                                        className="block mx-auto max-w-full object-contain p-2 rounded-4xl"
                                         loading={
                                             index === selectedIndex
                                                 ? "eager"
@@ -302,7 +302,7 @@ export function PhotoSlider() {
                                                   ? "high"
                                                   : "auto"
                                         }
-                                        style={{ maxHeight: "500px" }}
+                                        style={{ maxHeight: "400px" }}
                                     />
                                 </div>
                             </div>
