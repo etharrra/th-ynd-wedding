@@ -394,3 +394,9 @@
     max-height: 100vh;
     display: block;
 }
+
+/* Burmese text centering fix for Safari */
+.burmese-text-center {
+    text-align: center !important;
+    -webkit-text-align: center !important;
+}

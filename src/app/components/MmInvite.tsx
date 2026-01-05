@@ -1,7 +1,22 @@
 import { motion } from "motion/react";
 import { riseUpAnimation } from "../lib/animations";
+import { useEffect, useState } from "react";
 
 export function MmInvite() {
+    const [isSafari, setIsSafari] = useState(false);
+
+    useEffect(() => {
+        // Detect Safari browser more specifically
+        const userAgent = navigator.userAgent;
+        const isChrome =
+            /Chrome/.test(userAgent) && /Google Inc/.test(navigator.vendor);
+        const isSafariBrowser =
+            /Safari/.test(userAgent) &&
+            /Apple Computer/.test(navigator.vendor) &&
+            !isChrome;
+        setIsSafari(isSafariBrowser);
+    }, []);
+
     return (
         <section
             className="w-full py-16 px-8"
@@ -48,7 +63,6 @@ export function MmInvite() {
                         fontFamily:
                             "Canva Font, Myanmar Text, Padauk, sans-serif",
                         fontSize: "1.5rem",
-                        fontWeight: "bold",
                     }}
                     {...riseUpAnimation}
                 >
@@ -104,12 +118,12 @@ export function MmInvite() {
 
                 {/* Bride name */}
                 <motion.h2
-                    className="mb-2 text-center"
+                    className="mb-2 text-center burmese-text-center"
                     style={{
                         fontFamily:
                             "Canva Font, Myanmar Text, Padauk, sans-serif",
                         fontSize: "1.5rem",
-                        fontWeight: "bold",
+                        paddingLeft: isSafari ? "1.5rem" : "0",
                     }}
                     {...riseUpAnimation}
                 >
