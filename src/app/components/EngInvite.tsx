@@ -21,7 +21,7 @@ export function EngInvite() {
                 </motion.h1>
 
                 {/* Groom */}
-                <div className="mb-12">
+                <div>
                     <motion.h2
                         className="text-5xl mb-4"
                         style={{
@@ -40,21 +40,30 @@ export function EngInvite() {
                         (B.A English, Dip in Web Development)
                     </motion.p>
                     <motion.p
-                        className="text-base mb-4"
+                        className="text-base"
                         style={{ fontFamily: "Marcellus, serif" }}
                         {...riseUpAnimation}
                     >
                         Son of: U Htein Win + Daw Tin Tin Htay
                     </motion.p>
-                    <div className="flex items-center justify-center gap-2 mb-4">
-                        <div className="w-16 h-px bg-gray-400"></div>
-                        <span className="text-gray-400">❦</span>
-                        <div className="w-16 h-px bg-gray-400"></div>
-                    </div>
+                </div>
+
+                {/* Separator */}
+                <div className="flex items-center justify-center my-8">
+                    <motion.span
+                        className="text-4xl"
+                        style={{
+                            fontFamily: "RTL Ansam, serif",
+                            fontWeight: "normal",
+                        }}
+                        {...riseUpAnimation}
+                    >
+                        &amp;
+                    </motion.span>
                 </div>
 
                 {/* Bride */}
-                <div className="mb-16">
+                <div className="mb-10">
                     <motion.h2
                         className="text-5xl mb-4"
                         style={{
@@ -79,11 +88,13 @@ export function EngInvite() {
                     >
                         Daughter of: U Hla Kyaing + Daw Tin Kyi
                     </motion.p>
-                    <div className="flex items-center justify-center gap-2 mb-4">
-                        <div className="w-16 h-px bg-gray-400"></div>
-                        <span className="text-gray-400">❦</span>
-                        <div className="w-16 h-px bg-gray-400"></div>
-                    </div>
+                </div>
+
+                {/* Decorative Separator */}
+                <div className="flex items-center justify-center gap-2 my-4">
+                    <div className="w-16 h-px bg-gray-400"></div>
+                    <span className="text-gray-400">❦</span>
+                    <div className="w-16 h-px bg-gray-400"></div>
                 </div>
 
                 {/* Invitation Text */}

@@ -34,16 +34,16 @@ export function MmInvite() {
                     {...riseUpAnimation}
                 >
                     <p>
-                        ရန်ကုန်တိုင်းဒေသကြီး၊ ရွှေပြည်သာမြို့နယ်၊
-                        အမှတ်(၉)ရပ်ကွက် (ဦးတင်လှိုင် + ဒေါ်ခင်မြင့်)၊
-                        (ဦးကျော်ငြိမ်း + ဒေါ်ခင်သန်း) တို့၏ မြေး၊ ဦးထိန်ဝင်း +
-                        ဒေါ်တင်တင်ဌေး တို့၏ တစ်ဦးတည်းသောသား
+                        ရန်ကုန်တိုင်းဒေသကြီး၊ ရွှေပြည်သာမြို့နယ်၊ (ဦးတင်လှိုင် +
+                        ဒေါ်ခင်မြင့်)၊ (ဦးကျော်ငြိမ်း + ဒေါ်ခင်သန်း) တို့၏ မြေး၊
+                        ဦးထိန်ဝင်း + ဒေါ်တင်တင်ဌေး တို့၏ <br />
+                        တစ်ဦးတည်းသောသား
                     </p>
                 </motion.div>
 
                 {/* Groom name */}
                 <motion.h2
-                    className="mb-2"
+                    className="mb-2 text-center"
                     style={{
                         fontFamily:
                             "Canva Font, Myanmar Text, Padauk, sans-serif",
@@ -57,7 +57,7 @@ export function MmInvite() {
 
                 {/* Groom education */}
                 <motion.p
-                    className="mb-10"
+                    className="text-center"
                     style={{
                         fontFamily: "Canva Font, Marcellus, serif",
                         fontSize: "1rem",
@@ -68,10 +68,17 @@ export function MmInvite() {
                 </motion.p>
 
                 {/* Divider */}
-                <div className="flex items-center justify-center gap-2 mb-4">
-                    <div className="w-16 h-px bg-gray-400"></div>
-                    <span className="text-gray-400">❦</span>
-                    <div className="w-16 h-px bg-gray-400"></div>
+                <div className="flex items-center justify-center my-8">
+                    <motion.span
+                        className="text-center text-4xl"
+                        style={{
+                            fontFamily: "Canva Font, Marcellus, serif",
+                            fontSize: "1.5rem",
+                        }}
+                        {...riseUpAnimation}
+                    >
+                        နှင့်
+                    </motion.span>
                 </div>
 
                 {/* Parents information - Bride's side */}
@@ -88,15 +95,16 @@ export function MmInvite() {
                     <p>
                         ရန်ကုန်တိုင်းဒေသကြီး၊ ရွှေပြည်သာမြို့နယ် (ဦးညွန့်တင် +
                         ဒေါ်လွန်းစိန်)၊ (ဦးဖိုးသစ် + ဒေါ်ကြည်) တို့၏ မြေး၊
-                        (ဦးလှကြိုင် + ဒေါ်တင်ကြည်) တို့၏ သမီးထွေး၊ မစန္ဒာဝင်း၊
-                        မောင်သန်းဇော်ဝင်း၊ မောင်ထူးပိုင်စိုး၊ မောင်အောင်ထက်မိုး
-                        + မဟန်နီလှိုင် တို့၏ အငယ်ဆုံးညီမ
+                        (ဦးလှကြိုင် + ဒေါ်တင်ကြည်) တို့၏ <br />
+                        သမီးထွေး၊ မစန္ဒာဝင်း၊ မောင်သန်းဇော်ဝင်း၊
+                        မောင်ထူးပိုင်စိုး၊ မောင်အောင်ထက်မိုး + မဟန်နီလှိုင်
+                        တို့၏ အငယ်ဆုံးညီမ
                     </p>
                 </motion.div>
 
                 {/* Bride name */}
                 <motion.h2
-                    className="mb-2"
+                    className="mb-2 text-center"
                     style={{
                         fontFamily:
                             "Canva Font, Myanmar Text, Padauk, sans-serif",
@@ -110,7 +118,7 @@ export function MmInvite() {
 
                 {/* Bride education */}
                 <motion.p
-                    className="mb-10"
+                    className="mb-10 text-center"
                     style={{
                         fontFamily: "Canva Font, Marcellus, serif",
                         fontSize: "1rem",
