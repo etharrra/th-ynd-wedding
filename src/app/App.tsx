@@ -6,6 +6,7 @@ import { OurStory } from "./components/OurStory";
 import { CeremonySection } from "./components/CeremonySection";
 import { PhotoSlider } from "./components/PhotoSlider";
 import { FooterSection } from "./components/FooterSection";
+import { CountDown } from "./components/CountDown";
 
 export default function App() {
     return (
@@ -30,6 +31,9 @@ export default function App() {
 
             {/* Photo Slider */}
             <PhotoSlider />
+
+            {/* Countdown */}
+            <CountDown />
 
             {/* Footer Section */}
             <FooterSection />
