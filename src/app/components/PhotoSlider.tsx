@@ -40,31 +40,11 @@ export function PhotoSlider() {
         };
     }, [mainApi, onSelect]);
 
-    const photos = useMemo(
-        () => [
-            {
-                src: "/images/slider-images/image-1.jpg",
-                alt: "Prewedding photo 1",
-            },
+    const photos = useMemo(() => {
+        const allPhotos = [
             {
                 src: "/images/slider-images/image-2.jpg",
                 alt: "Prewedding photo 2",
-            },
-            {
-                src: "/images/slider-images/image-3.jpg",
-                alt: "Prewedding photo 3",
-            },
-            {
-                src: "/images/slider-images/image-4.jpg",
-                alt: "Prewedding photo 4",
-            },
-            {
-                src: "/images/slider-images/image-5.jpg",
-                alt: "Prewedding photo 5",
-            },
-            {
-                src: "/images/slider-images/image-6.jpg",
-                alt: "Prewedding photo 6",
             },
             {
                 src: "/images/slider-images/image-7.jpg",
@@ -79,10 +59,6 @@ export function PhotoSlider() {
                 alt: "Prewedding photo 9",
             },
             {
-                src: "/images/slider-images/image-10.jpg",
-                alt: "Prewedding photo 10",
-            },
-            {
                 src: "/images/slider-images/image-11.jpg",
                 alt: "Prewedding photo 11",
             },
@@ -91,20 +67,12 @@ export function PhotoSlider() {
                 alt: "Prewedding photo 12",
             },
             {
-                src: "/images/slider-images/image-13.jpg",
-                alt: "Prewedding photo 13",
-            },
-            {
                 src: "/images/slider-images/image-14.jpg",
                 alt: "Prewedding photo 14",
             },
             {
                 src: "/images/slider-images/image-15.jpg",
                 alt: "Prewedding photo 15",
-            },
-            {
-                src: "/images/slider-images/image-16.jpg",
-                alt: "Prewedding photo 16",
             },
             {
                 src: "/images/slider-images/image-17.jpg",
@@ -117,10 +85,6 @@ export function PhotoSlider() {
             {
                 src: "/images/slider-images/image-19.jpg",
                 alt: "Prewedding photo 19",
-            },
-            {
-                src: "/images/slider-images/image-20.jpg",
-                alt: "Prewedding photo 20",
             },
             {
                 src: "/images/slider-images/image-21.jpg",
@@ -151,20 +115,12 @@ export function PhotoSlider() {
                 alt: "Prewedding photo 27",
             },
             {
-                src: "/images/slider-images/image-28.jpg",
-                alt: "Prewedding photo 28",
-            },
-            {
                 src: "/images/slider-images/image-29.jpg",
                 alt: "Prewedding photo 29",
             },
             {
                 src: "/images/slider-images/image-30.jpg",
                 alt: "Prewedding photo 30",
-            },
-            {
-                src: "/images/slider-images/image-31.jpg",
-                alt: "Prewedding photo 31",
             },
             {
                 src: "/images/slider-images/image-32.jpg",
@@ -195,16 +151,8 @@ export function PhotoSlider() {
                 alt: "Prewedding photo 38",
             },
             {
-                src: "/images/slider-images/image-39.jpg",
-                alt: "Prewedding photo 39",
-            },
-            {
                 src: "/images/slider-images/image-40.jpg",
                 alt: "Prewedding photo 40",
-            },
-            {
-                src: "/images/slider-images/image-41.jpg",
-                alt: "Prewedding photo 41",
             },
             {
                 src: "/images/slider-images/image-42.jpg",
@@ -227,16 +175,20 @@ export function PhotoSlider() {
                 alt: "Prewedding photo 46",
             },
             {
-                src: "/images/slider-images/image-47.jpg",
-                alt: "Prewedding photo 47",
-            },
-            {
                 src: "/images/slider-images/image-48.jpg",
                 alt: "Prewedding photo 48",
             },
-        ],
-        []
-    );
+        ];
+
+        // Fisher-Yates shuffle algorithm
+        const shuffled = [...allPhotos];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+
+        return shuffled;
+    }, []);
 
     // Preload nearby images to avoid jank when clicking thumbnails
     useEffect(() => {
@@ -261,7 +213,7 @@ export function PhotoSlider() {
         >
             <div className="max-w-7xl mx-auto">
                 <motion.h2
-                    className="text-center mb-8"
+                    className="text-center mb-2"
                     style={{
                         fontFamily: "RTL Ansam, Marcellus, serif",
                         fontSize: "3.25rem",
@@ -271,7 +223,7 @@ export function PhotoSlider() {
                     }}
                     {...riseUpAnimation}
                 >
-                    Our Prewedding Memories
+                    Prewedding Moments
                 </motion.h2>
 
                 {/* Main Carousel (Embla) */}
@@ -282,7 +234,7 @@ export function PhotoSlider() {
                                 key={index}
                                 className="embla__slide flex-[0_0_100%] min-w-0"
                             >
-                                <div className="w-full h-[400px] grid place-items-center">
+                                <div className="w-full h-[500px] grid place-items-center">
                                     <img
                                         src={photo.src}
                                         alt={photo.alt}
@@ -302,7 +254,7 @@ export function PhotoSlider() {
                                                   ? "high"
                                                   : "auto"
                                         }
-                                        style={{ maxHeight: "400px" }}
+                                        style={{ maxHeight: "500px" }}
                                     />
                                 </div>
                             </div>

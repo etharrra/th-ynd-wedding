@@ -4,7 +4,7 @@ export function TraditionalPhoto() {
             <img
                 src="/images/traditional-img.jpg"
                 alt="Traditional Wedding Photo"
-                className="w-full h-auto"
+                className="traditional-photo-img"
             />
         </section>
     );
