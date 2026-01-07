@@ -32,13 +32,11 @@ export function OurStory() {
                             }}
                             {...riseUpAnimation}
                         >
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Ut a massa est. Aliquam fermentum mauris sit
-                            amet felis scelerisque vehicula. Phasellus mattis
-                            porttitor nisl, a pulvinar enim dictum ut. Duis
-                            volutpat ornare sem. Ut porttitor vulputate nulla
-                            eget euismod est gravida ut. Proin vitae volutpat
-                            ligula, vel porttitor dui. Nam eget eros risus.
+                            Our story began in 2014, during our final year of high school. I was fifteen, and she was sixteen—two kids just beginning to truly see each other. We started as friends, sharing late-night study sessions and weekend walks, slowly realizing we were building something rare.
+                            <br /><br />
+                            Over the next ten years, we grew up together. We celebrated college graduations, navigated first jobs, and held each other close through quiet storms and bright, unexpected joys. Life tested us, but we never let go. Then, on Valentine’s Day, February 14, 2025, surrounded by our families, we held a private engagement ceremony. In that moment, our decade-long promise found its future.
+                            <br /><br />
+                            Now, on January 18, 2026, we’ll stand before everyone we love and promise forever. This isn’t just the start of a marriage—it’s the beginning of the next chapter in a story we’ve been writing together since we were fifteen and sixteen.
                         </motion.p>
                     </div>
 
