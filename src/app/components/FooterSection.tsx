@@ -4,7 +4,7 @@ import { riseUpAnimation } from "../lib/animations";
 export function FooterSection() {
     return (
         <section
-            className="w-full py-28 px-6 md:px-8"
+            className="w-full py-28 px-6 md:px-8 pb-16"
             style={{ backgroundColor: "#F5F1E8" }}
         >
             <div className="max-w-6xl mx-auto flex flex-col items-center">
@@ -71,6 +71,33 @@ export function FooterSection() {
                         </motion.p>
                     </div>
                 </div>
+
+                <motion.div
+                    className="mt-16 text-center"
+                    style={{
+                        fontFamily: "Marcellus, serif",
+                        fontSize: "1rem",
+                        color: "#8B7661",
+                        textShadow: "1px 1px 1px rgba(0,0,0,0.1)",
+                    }}
+                    {...riseUpAnimation}
+                >
+                    <span>
+                        Made with love by{" "}
+                        <a
+                            href="https://tharhtoo.netlify.app"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="underline decoration-[#8B7661]/50 hover:decoration-[#8B7661] transition-colors"
+                            style={{
+                                color: "#8B7661",
+                                fontFamily: "RTL Ansam, serif",
+                            }}
+                        >
+                            Thar
+                        </a>
+                    </span>
+                </motion.div>
             </div>
         </section>
     );
