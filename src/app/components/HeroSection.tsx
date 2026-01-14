@@ -53,7 +53,7 @@ export function HeroSection() {
                 className="absolute bottom-12 right-12 text-right text-white"
                 style={{ fontFamily: "Optima, sans-serif", fontWeight: "bold" }}
             >
-                <p className="text-lg tracking-wide mb-1">January 18 2025</p>
+                <p className="text-lg tracking-wide mb-1">January 18 2026</p>
                 <p className="text-xl tracking-wider">#TharAndYuForever</p>
             </div>
         </section>
