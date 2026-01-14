@@ -47,6 +47,12 @@ const CountDown = lazy(() =>
     import("./components/CountDown").then((m) => ({ default: m.CountDown }))
 );
 
+const GiftRegistry = lazy(() =>
+    import("./components/GiftRegistry").then((m) => ({
+        default: m.GiftRegistry,
+    }))
+);
+
 function InView({
     children,
     rootMargin = "400px 0px",
@@ -167,6 +173,17 @@ export default function App() {
                     }
                 >
                     <CountDown />
+                </Suspense>
+            </InView>
+
+            {/* Gift Registry */}
+            <InView>
+                <Suspense
+                    fallback={
+                        <div className="min-h-[200px]" aria-busy="true" />
+                    }
+                >
+                    <GiftRegistry />
                 </Suspense>
             </InView>
 
