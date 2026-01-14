@@ -50,8 +50,7 @@ export function GiftRegistry() {
                                 color: "#2F2A25",
                             }}
                         >
-                            Scan the QR code with your KBZ Pay app to send a
-                            gift.
+                            Scan the QR code with your KBZ Pay to send a gift.
                         </p>
                     </motion.div>
                 </div>
