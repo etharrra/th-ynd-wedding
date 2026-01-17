@@ -68,7 +68,7 @@ export function CountDown() {
                     <p
                         style={{
                             fontFamily: "Marcellus, serif",
-                            fontSize: "1.25rem",
+                            fontSize: "2rem",
                             color: "#2F2A25",
                         }}
                     >
